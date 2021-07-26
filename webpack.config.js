@@ -24,7 +24,7 @@ const getRollbarConfigForDischargeTarget = (dischargeTarget) => {
             dischargeTarget === 'production'
                 ? 'https://instant.0xproject.com'
                 : `http://0x-instant-${dischargeTarget}.s3-website-us-east-1.amazonaws.com`;
-
+        
         return {
             rollbarSourceMapPublicPath,
             rollbarRequired: true,
